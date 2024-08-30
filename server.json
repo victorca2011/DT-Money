@@ -1,0 +1,36 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de Site",
+      "type": "income",
+      "category": "Venda",
+      "price": 1400,
+      "createdAt": "2024-08-25T19:36:44.505Z"
+    },
+    {
+      "id": 2,
+      "description": "Hamburger",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 59,
+      "createdAt": "2024-08-26T19:36:44.505Z"
+    },
+    {
+      "id": 3,
+      "description": "Netflix",
+      "type": "outcome",
+      "category": "Entretenimento",
+      "price": 38.9,
+      "createdAt": "2024-08-29T19:36:44.505Z"
+    },
+    {
+      "id": 4,
+      "description": "Bonificação",
+      "type": "income",
+      "category": "Bônus",
+      "price": 150,
+      "createdAt": "2024-08-31T19:36:44.505Z"
+    }
+  ]
+}
