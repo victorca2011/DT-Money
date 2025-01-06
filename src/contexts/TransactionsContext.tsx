@@ -36,14 +36,14 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
     const fetchTransactions = useCallback (
         async (query?: string) => {
-            const response = await api.get('transactions', {
-                params: {
-                    _sort: 'createdAt', //NAO FUNCIONOU
-                    _order: 'desc',
-                    q: query,
-                }
-            })
-            setTransactions(response.data);
+            const response = await api.get('transactions')
+            if (!query) {
+                setTransactions(response.data);
+                return
+            }
+            const filtered = response.data.filter((data: any) => data.description.toLowerCase().includes(query?.toLowerCase()))
+            console.log(filtered);
+            setTransactions(filtered);
         }, 
         [],
     )
